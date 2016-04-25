@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   # PART 0: LUCKY AND UNLUCKY NUMBERS
   # =================================
 
-  
+  get("lucky_numbers",{ :controller=>"", action =>""})
 
   # PART 1: STATIC ROUTES
   # =====================
