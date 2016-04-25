@@ -6,4 +6,9 @@ class FortunesController < ApplicationController
     render("zebra.html.erb")
     #allows rails to use the contents of the html/css file to format the output on the user's end
   end
+
+  def unlucky
+    render("giraffe.html.erb")
+  end
+
 end
