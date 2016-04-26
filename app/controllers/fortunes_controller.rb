@@ -2,10 +2,10 @@ class FortunesController < ApplicationController #inheriting from ApplicationCon
 
 # class name needs to match controller name in routes.rb
 
-  def lucky  # method name needs to match action in routes.rb
+  def luck  # method name needs to match action in routes.rb
     @num = rand(100)
 
-    render("lucky.html.erb")
+    render("luck.html.erb")
   end
 
   def unlucky  # method name needs to match action in routes.rb
