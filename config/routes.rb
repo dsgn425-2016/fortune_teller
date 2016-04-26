@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   # PART 0: LUCKY AND UNLUCKY NUMBERS
   # =================================
 
-  # get("/lucky_numbers", {:controller => "fortunes", :action => "luck"})
-  # get("/unlucky_numbers", {:controller => "fortunes", :action => "unlucky"})
+  get("/lucky_numbers", {:controller => "fortunes", :action => "luck"})
+  get("/unlucky_numbers", {:controller => "fortunes", :action => "unlucky"})
 
   # PART 1: STATIC ROUTES
   # =====================
@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   # Uncomment each route below ONE AT A TIME and debug.
 
   get("/zodiacs/aries",       { :controller =>  "zodiacs",  :action =>  "ram" })
-  # get("/zodiacs/taurus",      { :controller,   "zodiacs", :action,   "bull" })
+  get("/zodiacs/taurus",      { :controller =>  "zodiacs", :action => "bull" })
   # get(/zodiacs/gemini,        { :controller => "zodiacs", :action => "twins" })
   # get("/zodiacs/cancer"       { :controller => "zodiacs"  :action => "crab" })
   # get ("/zodiacs/leo",        { :controller => "zodiac",  :action => "lion" })
