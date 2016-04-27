@@ -1,0 +1,8 @@
+<h1>your unlucky numbers are <%= @unlucky_number %></h1>
+
+<ul>
+<%@unlucky_numbers.each do |num| %> <!-- no equal sign for each/if/do -->
+<li><%=num%> </li>  <!-- add equal sign to show ruby, otherwise won't show -->
+<%end %>
+
+<a href="https://www.google.com">Use this</a>
