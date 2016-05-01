@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   # PART 0: LUCKY AND UNLUCKY NUMBERS
   # =================================
 
+    get("/",{ :controller => "fortunes", :action => "lucky" })
+
     get("/lucky_numbers",{ :controller => "fortunes", :action => "lucky" })
 
     get("/unlucky_numbers",{ :controller => "fortunes", :action => "unlucky" })
