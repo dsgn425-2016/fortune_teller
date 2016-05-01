@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   # PART 0: LUCKY AND UNLUCKY NUMBERS
   # =================================
+#get(path i.e. whatever is coming after localhost3000, {where it takes you})
+get("/lucky_number",{:controller=>"fortunes",:action=>"lucky"})
+get("/unlucky_number", {:controller=>"unfortune",:action=>"unlucky"})
 
-  
 
   # PART 1: STATIC ROUTES
   # =====================

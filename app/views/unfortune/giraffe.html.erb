@@ -1,0 +1,9 @@
+<h4> Your unlucky numbers are:
+</h4>
+<ul>
+   <% @unlucky_numbers.each do |num| %>
+<!-- Note that there isn't an equal sign here. IF you put equal sign,
+the code gets outputted on the browser. So for 'each', 'if' etc. don't put the equal sign -->
+<li><%= num %></li>
+<% end %> <!-- it will give an error if you put equal here -->
+</ul>
