@@ -2,8 +2,9 @@ Rails.application.routes.draw do
   # PART 0: LUCKY AND UNLUCKY NUMBERS
   # =================================
 #get(path i.e. whatever is coming after localhost3000, {where it takes you})
-get("/lucky_number",{:controller=>"fortunes",:action=>"lucky"})
-get("/unlucky_number", {:controller=>"unfortune",:action=>"unlucky"})
+get("/",{:controller=>"fortunes",:action=>"lucky"})
+get("/lucky_numbers",{:controller=>"fortunes",:action=>"lucky"})
+get("/unlucky_numbers", {:controller=>"fortunes",:action=>"unlucky"})
 
 
   # PART 1: STATIC ROUTES
@@ -11,11 +12,11 @@ get("/unlucky_number", {:controller=>"unfortune",:action=>"unlucky"})
 
   # Uncomment each route below ONE AT A TIME and debug.
 
-  # get("/zodiacs/aries",       { :controller =>  zodiacs,  action =>  "ram" })
-  # get("/zodiacs/taurus",      { :controller,   "zodiacs", :action,   "bull" })
-  # get(/zodiacs/gemini,        { :controller => "zodiacs", :action => "twins" })
-  # get("/zodiacs/cancer"       { :controller => "zodiacs"  :action => "crab" })
-  # get ("/zodiacs/leo",        { :controller => "zodiac",  :action => "lion" })
+  get("/zodiacs/aries",       { :controller =>  "zodiacs",  :action =>  "ram" })
+  get("/zodiacs/taurus",      { :controller =>  "zodiacs", :action => "bull" })
+  get("/zodiacs/gemini",      { :controller => "zodiacs", :action => "twins" })
+  get("/zodiacs/cancer",      { :controller => "zodiacs", :action => "crab" })
+  # get ("/zodiacs/leo",        { :controller => "zodiacs", :action => "lion" })
   # get(" /zodiacs/virgo",      { :controller => "Zodiacs", :action => "maiden" })
   # get("/zodiacs/libra",       { :controller => "zodiacs", :action => "scales" })
   # get("/zodiac/scorpio",      { :controller => "zodiacs", :action => "scorpion" })
