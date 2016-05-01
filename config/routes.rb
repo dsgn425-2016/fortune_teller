@@ -1,14 +1,12 @@
 Rails.application.routes.draw do
   # PART 0: LUCKY AND UNLUCKY NUMBERS
   # =================================
-
+get("",{:controller=>"fortunate", :action=>"lucky"})
 get("/lucky_numbers",{:controller=>"fortunate", :action=>"lucky"})
 get("/unlucky_numbers",{:controller=>"unfortunate", :action=>"unlucky"})
 
   # PART 1: STATIC ROUTES
   # =====================
-
-  # Uncomment each route below ONE AT A TIME and debug.
 
    get("/zodiacs/aries",{ :controller=>"zodiacs", :action=>"ram" })
   get("/zodiacs/taurus",      { :controller=>   "zodiacs", :action=>   "bull" })
