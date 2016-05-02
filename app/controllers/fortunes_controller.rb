@@ -1,9 +1,12 @@
 class FortunesController < ApplicationController
 
   def lucky
-    num = rand(100)
-
-    render("zebra.html.erb")
+    @lucky_numbers = [rand(1000), rand(700...1000), rand(10000)]
+      render("zebra.html.erb")
   end
+
+def unlucky_numbers
+  @unlucky_numbers = [rand(1000), rand(700...1000), rand(10000)]
+  render("giraffe.html.erb")
 
   end

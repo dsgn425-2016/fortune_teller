@@ -1,3 +1,7 @@
-<h1>Howdy, world!</h1>
+<h1> Your lucky numbers are: </h1>
 
-<p>Your lucky number today is <%= rand(100) %>.</p>
+<ul>
+<% @lucky_numbers.each do |num| %>
+<li><%=num %></li>
+<%end%>
+</ul>
