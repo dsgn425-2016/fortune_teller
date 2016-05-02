@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   # PART 0: LUCKY AND UNLUCKY NUMBERS
   # =================================
-get("/lucky_numbers", {:controller =>"fortunes", :action=>"lucky"})
+get("/", { :controller =>"fortunes", :action=>"unlucky"})
 
-get("/unlucky_numbers", {:controller =>"fortunes", :action=>"unlucky"})
+get("/lucky_numbers", { :controller =>"fortunes", :action=>"lucky"})
+
+get("/unlucky_numbers", { :controller =>"fortunes", :action=>"unlucky"})
 
   # PART 1: STATIC ROUTES
   # =====================

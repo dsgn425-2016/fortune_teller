@@ -70,3 +70,4 @@ class ZodiacsController < ApplicationController
 
     render("fish.html.erb")
   end
+end
