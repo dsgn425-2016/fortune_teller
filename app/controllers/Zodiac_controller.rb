@@ -54,7 +54,7 @@ class Zodiacscontroller
   end
 
   def goat
-    prediction = "You could be on a real emotional high today because of your success and that of other household members, Capricorn. Your mind may be buzzing with ideas for future expansion, some of which may not be all that workable. However, you should allow yourself a few flights of fancy. Tomorrow your feet will be back on the ground and you will see things in a more practical light."
+    @prediction = "You could be on a real emotional high today because of your success and that of other household members, Capricorn. Your mind may be buzzing with ideas for future expansion, some of which may not be all that workable. However, you should allow yourself a few flights of fancy. Tomorrow your feet will be back on the ground and you will see things in a more practical light."
 
     render("goat.html.erb")
   end
@@ -68,6 +68,6 @@ class Zodiacscontroller
   def fish
     @prediction = "Business and financial success makes you happy and satisfied, Pisces. You also look forward to moving on. The downside of this flush period is that people who aren't particularly trustworthy might decide to latch onto your coattails for their own purposes. Some might even ask for loans. Be careful about the ones you assist. They might not be honest with you. Don't fall for any sob stories."
 
-    render("fish.html.erb")
+   render("fish.html.erb")
   end
 end
